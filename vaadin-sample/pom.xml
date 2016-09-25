@@ -105,8 +105,7 @@
 				</executions>
 			</plugin>
 
-			<!-- Disable running integration tests in test phase end -->
-
+			<!-- Disable running integration tests in test phase -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-failsafe-plugin</artifactId>
@@ -135,15 +134,7 @@
 
 			<build>
 				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-compiler-plugin</artifactId>
-						<configuration>
-							<excludes>
-								<exclude>none</exclude>
-							</excludes>
-						</configuration>
-					</plugin>
+					<!-- Enable ITs -->
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-failsafe-plugin</artifactId>
